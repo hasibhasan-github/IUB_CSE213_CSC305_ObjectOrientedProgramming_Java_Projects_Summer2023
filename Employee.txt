@@ -1,0 +1,11 @@
+ID:=1001, Name:Md Hasib Hasan, Gender:Male, Dept:Admin, Sal:25000.0, Desig:CEO, Dob:2002-06-20, Doj2022-01-01
+ID:=1002, Name:Rashedul Islam Rupom, Gender:Male, Dept:Admin, Sal:22000.0, Desig:COO, Dob:2001-07-27, Doj2022-04-01
+ID:=1003, Name:Moaz, Gender:Male, Dept:HR, Sal:21000.0, Desig:Senior Officer, Dob:2000-11-23, Doj2022-07-01
+ID:=1004, Name:Md Masum Billa, Gender:Male, Dept:Manager, Sal:20000.0, Desig:HR Manager, Dob:2001-10-03, Doj2022-09-01
+ID:=1005, Name:Anika J Ema, Gender:Female, Dept:Accountant, Sal:19500.0, Desig:Senior Officer, Dob:2002-09-21, Doj2022-11-01
+ID:=1006, Name:Nayem Siddique, Gender:Male, Dept:Utility, Sal:18000.0, Desig:Junior Officer, Dob:2002-05-16, Doj2023-01-01
+ID:=1007, Name:Rahatul Islam, Gender:Male, Dept:Security, Sal:17500.0, Desig:Senior Officer, Dob:2002-02-13, Doj2023-03-01
+ID:=1008, Name:Anika Islam, Gender:Female, Dept:Clerk, Sal:15000.0, Desig:Junior Officer, Dob:2002-05-16, Doj2023-06-01
+ID:=1009, Name:Yousra Tabbasum, Gender:Female, Dept:Accountant, Sal:14000.0, Desig:Executive, Dob:2001-08-24, Doj2023-07-01
+ID:=1010, Name:Nahidul Islam Peyal, Gender:Male, Dept:Security, Sal:17500.0, Desig:Executive, Dob:2002-07-19, Doj2023-08-01
+ID:=1011, Name:Farhan Tamzid, Gender:Male, Dept:HR, Sal:13799.0, Desig:Senior Officer, Dob:2000-07-15, Doj2020-07-01

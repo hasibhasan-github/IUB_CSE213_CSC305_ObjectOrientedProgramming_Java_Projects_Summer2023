@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane id="AnchorPane" prefHeight="493.0" prefWidth="739.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="employeepracticeMainpkg.EmployeeInterfaceController">
+   <children>
+      <Label layoutX="38.0" layoutY="26.0" text="ID:" />
+      <Label layoutX="21.0" layoutY="56.0" text="Name:" />
+      <Label layoutX="21.0" layoutY="89.0" text="Salary:" />
+      <Label layoutX="14.0" layoutY="119.0" text="Gender:" />
+      <Label layoutX="198.0" layoutY="26.0" text="Designation:" />
+      <Label layoutX="200.0" layoutY="56.0" text="Department:" />
+      <Label layoutX="198.0" layoutY="89.0" text="Date of Birth:" />
+      <Label layoutX="184.0" layoutY="119.0" text="Date of Joining:" />
+      <TextField fx:id="employeeid" layoutX="59.0" layoutY="22.0" prefHeight="25.0" prefWidth="115.0" />
+      <TextField fx:id="employeename" layoutX="59.0" layoutY="52.0" prefHeight="25.0" prefWidth="115.0" />
+      <TextField fx:id="employeesalary" layoutX="59.0" layoutY="85.0" prefHeight="25.0" prefWidth="115.0" />
+      <ComboBox fx:id="designationbox" layoutX="275.0" layoutY="22.0" prefHeight="25.0" prefWidth="128.0" promptText="Select Designation" />
+      <ComboBox fx:id="departmentbox" layoutX="275.0" layoutY="52.0" prefHeight="25.0" prefWidth="128.0" promptText="Select Department" />
+      <DatePicker fx:id="datebirthfield" layoutX="275.0" layoutY="85.0" prefHeight="25.0" prefWidth="128.0" />
+      <DatePicker fx:id="datejoiningfield" layoutX="274.0" layoutY="115.0" prefHeight="25.0" prefWidth="128.0" />
+      <RadioButton fx:id="maleid" layoutX="59.0" layoutY="119.0" mnemonicParsing="false" text="Male" />
+      <RadioButton fx:id="femaleid" layoutX="117.0" layoutY="119.0" mnemonicParsing="false" text="Female" />
+      <Button layoutX="413.0" layoutY="30.0" mnemonicParsing="false" onAction="#addEmployeeOnButtonClick" prefHeight="70.0" prefWidth="172.0" style="-fx-background-color: CORNSILK; -fx-border-style: solid inside;" text="Add new employee to arraylist show all of them in text area" textAlignment="CENTER" wrapText="true" />
+      <Label fx:id="employeeinformationcount" layoutX="21.0" layoutY="155.0" prefHeight="25.0" prefWidth="527.0" text="After addition there are 0 employees, as shown below:" />
+      <Line endX="596.0" layoutX="122.0" layoutY="317.0" startX="-100.0" strokeWidth="4.0" />
+      <ComboBox fx:id="searchdeptbox" layoutX="157.0" layoutY="327.0" prefWidth="150.0" />
+      <Label layoutX="13.0" layoutY="331.0" text="Select Search Department:" />
+      <Label layoutX="14.0" layoutY="365.0" text="Select lower Salary Bound:" />
+      <Label layoutX="14.0" layoutY="393.0" text="Select upper Salary Bound:" />
+      <TextField fx:id="lowsalary" layoutX="159.0" layoutY="361.0" prefHeight="25.0" prefWidth="149.0" />
+      <TextField fx:id="upsalary" layoutX="159.0" layoutY="389.0" />
+      <Button layoutX="12.0" layoutY="431.0" mnemonicParsing="false" onAction="#searchButton" prefHeight="48.0" prefWidth="295.0" text="Show average salary of the employee meeting search criterion." textAlignment="CENTER" wrapText="true" />
+      <Line endX="-1.0" endY="137.0" layoutX="327.0" layoutY="340.0" startX="-1.0" startY="-9.0" />
+      <TextArea fx:id="addedresultshow" layoutX="18.0" layoutY="181.0" prefHeight="119.0" prefWidth="703.0" wrapText="true" />
+      <TextArea fx:id="searchResult" layoutX="343.0" layoutY="334.0" prefHeight="78.0" prefWidth="213.0" wrapText="true" />
+      <Button layoutX="418.0" layoutY="431.0" mnemonicParsing="false" onAction="#deatilswithdatasend" style="-fx-background-color: pink;" text="View Deatils" wrapText="true" />
+      <Button layoutX="602.0" layoutY="34.0" mnemonicParsing="false" onAction="#SavetoTextFileButtonOnClick" prefHeight="27.0" prefWidth="106.0" style="-fx-background-color: CHARTREUSE; -fx-border-style: solid inside;" text="Save to Text File" />
+      <Button layoutX="593.0" layoutY="72.0" mnemonicParsing="false" onAction="#readfromtextfileButton" prefHeight="27.0" prefWidth="128.0" style="-fx-background-color: aquamarine; -fx-border-style: solid inside;" text="Read from Text File" />
+      <TextArea fx:id="textFileTracker" editable="false" layoutX="412.0" layoutY="109.0" prefHeight="40.0" prefWidth="308.0" style="-fx-background-color: LEMONCHIFFON; -fx-border-width: 0.5; -fx-border-radius: 3; -fx-border-style: solid inside;" wrapText="true" />
+   </children>
+</AnchorPane>
