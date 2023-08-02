@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderPaneId" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="irassumulationv1.DashboardFxmlController">
+   <top>
+      <MenuBar prefHeight="33.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Select Operation">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#addnewfacultyAdminButton" text="Add new Faculty(CITS Admin)" />
+                  <MenuItem mnemonicParsing="false" onAction="#addNewApprovedCourseButtton" text="Add new approved course" />
+                  <MenuItem mnemonicParsing="false" onAction="#registrationOfferCourseButton" text="Offer course for registration" />
+                  <MenuItem mnemonicParsing="false" onAction="#courseRegistrationButton" text="Course Registration" />
+                  <MenuItem mnemonicParsing="false" onAction="#fileContentButton" text="Show file content" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <Label text="Welcome to IRAS universal Dashboard" textAlignment="CENTER" wrapText="true" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </center>
+</BorderPane>

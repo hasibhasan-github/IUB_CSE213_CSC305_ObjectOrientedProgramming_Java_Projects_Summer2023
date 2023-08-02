@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: BEIGE;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="irassumulationv1.AddnewapprovedcourseFxmlController">
+   <children>
+      <TextField fx:id="courseidtTextfield" layoutX="56.0" layoutY="58.0" />
+      <TextField fx:id="courseTitleTextField" layoutX="56.0" layoutY="119.0" />
+      <Label layoutX="56.0" layoutY="102.0" text="Course Tittle:" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="41.0" text="Course ID:" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="creditscombobox" layoutX="193.0" layoutY="175.0" prefWidth="150.0" promptText="Select Credits" />
+      <ComboBox fx:id="coursetypecombobox" layoutX="310.0" layoutY="58.0" prefWidth="150.0" promptText="Select Course Type" />
+      <ComboBox fx:id="coursecategorycombobox" layoutX="310.0" layoutY="119.0" prefWidth="150.0" promptText="Select Course Category" />
+      <Button layoutX="203.0" layoutY="234.0" mnemonicParsing="false" onAction="#addnewcoursebutton" prefHeight="25.0" prefWidth="131.0" style="-fx-background-color: GREENYELLOW; -fx-border-radius: 10; -fx-border-color: red;" text="Add new Course" />
+   </children>
+</AnchorPane>
