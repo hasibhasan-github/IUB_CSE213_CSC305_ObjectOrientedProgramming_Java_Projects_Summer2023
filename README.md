@@ -31,6 +31,8 @@ selecting a course and faculty for an OfferedCourse<br />
 
 #### deyzone@gmail.com & subrata@iub.edu.bd Strictly Coding Strictly Coding - by Subrata Kumar Dey
 
+#### Solveed by @Md Hasib Hasan
+
 4. Design a FXML called CourseRegistrationScene.fxml for Student to append new
 RegisteredCourse instances (normalized transaction class) to RegisteredCourse.bin binary file
 using ObjectOutputStream <br />
