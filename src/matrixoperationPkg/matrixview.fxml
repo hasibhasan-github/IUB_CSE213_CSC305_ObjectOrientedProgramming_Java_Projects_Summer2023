@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="618.0" prefWidth="651.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="matrixoperationPkg.MatrixviewController">
+   <children>
+      <ComboBox fx:id="matrix1Rows" layoutX="175.0" layoutY="23.0" onAction="#matrix1RowsComboBox" prefHeight="25.0" prefWidth="33.0" />
+      <TextField fx:id="matrix1Cols" layoutX="233.0" layoutY="23.0" promptText="No. of cols for matrix 1" />
+      <TextField fx:id="matrix2Cols" layoutX="233.0" layoutY="61.0" promptText="No. of cols for matrix 2" />
+      <Label layoutX="14.0" layoutY="19.0" prefHeight="33.0" prefWidth="167.0" text="Select no. of rows for matrix1" />
+      <Label layoutX="14.0" layoutY="57.0" prefHeight="33.0" prefWidth="167.0" text="Select no. of rows for matrix2" />
+      <ComboBox fx:id="matrix2rows" layoutX="175.0" layoutY="61.0" onAction="#matrix2RowsCombo" prefHeight="25.0" prefWidth="33.0" promptText="2" />
+      <Line endX="9.0" endY="-9.0" layoutX="394.0" layoutY="23.0" startX="9.0" startY="143.0" />
+      <ComboBox fx:id="operationboxofmatrix" layoutX="438.0" layoutY="23.0" onAction="#matrixoperationselection" prefHeight="25.0" prefWidth="198.0" promptText="Select an operation" />
+      <RadioButton fx:id="matrix1TransInverse" layoutX="438.0" layoutY="65.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="198.0" text="Matrix1 tranpose/Inverse" />
+      <RadioButton fx:id="matrix2TransInverse" layoutX="438.0" layoutY="101.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="198.0" text="Matrix2 tranpose/Inverse" />
+      <RadioButton fx:id="bothTransInverse" layoutX="438.0" layoutY="134.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="198.0" text="Both tranpose/Inverse" />
+      <Line endX="414.0" endY="-28.0" layoutX="219.0" layoutY="207.0" startX="-204.0" startY="-28.0" />
+      <Label fx:id="elementupdatematrix1" layoutX="14.0" layoutY="97.0" prefHeight="33.0" prefWidth="173.0" text="Enter [0][0] element for matrix1:" />
+      <Label fx:id="elementupdatematrix2" layoutX="14.0" layoutY="130.0" prefHeight="33.0" prefWidth="173.0" text="Enter [0][0] element for matrix2:" />
+      <TextField fx:id="getelementmatrix1" layoutX="187.0" layoutY="101.0" prefHeight="25.0" prefWidth="71.0" />
+      <TextField fx:id="getelementmatrix2" layoutX="187.0" layoutY="134.0" prefHeight="25.0" prefWidth="71.0" />
+      <Button fx:id="addElementmatrix1" layoutX="272.0" layoutY="101.0" mnemonicParsing="false" onAction="#matrix1elementadded" prefHeight="25.0" prefWidth="107.0" text="Add Element" />
+      <Button fx:id="addElementmatrix2" layoutX="272.0" layoutY="134.0" mnemonicParsing="false" onAction="#matrix2elementadded" prefHeight="25.0" prefWidth="107.0" text="Add Element" />
+      <Button fx:id="operationbutton" layoutX="169.0" layoutY="189.0" mnemonicParsing="false" onAction="#executeOperation" prefHeight="42.0" prefWidth="310.0" text="Execute Operation &amp; Show Result" textFill="#000fe8">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="resultshowlabel" alignment="TOP_LEFT" layoutX="14.0" layoutY="246.0" prefHeight="364.0" prefWidth="619.0" style="-fx-background-color: lavender;">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
