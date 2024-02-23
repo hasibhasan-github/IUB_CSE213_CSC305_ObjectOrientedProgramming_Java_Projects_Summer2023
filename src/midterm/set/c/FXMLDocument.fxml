@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="677.0" prefWidth="884.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="midterm.set.c.FXMLDocumentController">
+   <children>
+      <Label layoutX="33.0" layoutY="43.0" prefHeight="45.0" prefWidth="231.0" text="Populate ArrayList&lt;int&gt; valList:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="enterElementTxtField" layoutX="145.0" layoutY="96.0" prefHeight="32.0" prefWidth="149.0" />
+      <Label layoutX="33.0" layoutY="89.0" prefHeight="45.0" prefWidth="112.0" text="Enter Element:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="69.0" layoutY="148.0" mnemonicParsing="false" onAction="#addElementToValListButton" prefHeight="45.0" prefWidth="160.0" text="Add Element to valList">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Line endX="-87.0" endY="46.0" layoutX="410.0" layoutY="193.0" startX="-87.0" startY="-138.0" strokeWidth="3.0">
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#133fd0" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Line>
+      <Button layoutX="356.0" layoutY="61.0" mnemonicParsing="false" onAction="#UseValListToCreateArray1Button" prefHeight="55.0" prefWidth="231.0" text="Use valList to create MyArray instance arr1 and clear valList" textFill="#237ebf" wrapText="true">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="356.0" layoutY="143.0" mnemonicParsing="false" onAction="#UseValListToCreateArray2Button" prefHeight="55.0" prefWidth="231.0" text="Use valList to create MyArray instance arr2 and clear valList" textFill="#2ab574" wrapText="true">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Line endX="-87.0" endY="46.0" layoutX="719.0" layoutY="193.0" startX="-87.0" startY="-138.0" strokeWidth="3.0">
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#133fd0" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Line>
+      <Button layoutX="667.0" layoutY="97.0" mnemonicParsing="false" onAction="#mergeArray1andArray2ShowResultButton" prefHeight="62.0" prefWidth="177.0" text="Merge arr1 &amp; arr2 and show results" textFill="#bf3d9dd3" wrapText="true">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Line endX="457.0" endY="-162.0" layoutX="405.0" layoutY="402.0" startX="-383.0" startY="-162.0" stroke="#1cbabd59" strokeWidth="4.0" />
+      <TextArea fx:id="resultTxtArea" editable="false" layoutX="26.0" layoutY="283.0" prefHeight="200.0" prefWidth="818.0" wrapText="true" />
+      <Label layoutX="33.0" layoutY="255.0" text="Post Processing results:">
+         <font>
+            <Font name="Bell MT Bold" size="16.0" />
+         </font>
+      </Label>
+      <Line endX="457.0" endY="-162.0" layoutX="405.0" layoutY="666.0" startX="-383.0" startY="-162.0" stroke="#1cbabd59" strokeWidth="4.0" />
+      <RadioButton fx:id="forwardRadioButton" layoutX="192.0" layoutY="531.0" mnemonicParsing="false" text="Forward">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="backwardRadioButton" layoutX="272.0" layoutY="531.0" mnemonicParsing="false" text="Backward">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="15.0" layoutY="530.0" text="Select Traversal Order:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="565.0" text="Select Odd/Even:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="595.0" text="Select MyArray Instance:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="arr1RadioButton" layoutX="186.0" layoutY="596.0" mnemonicParsing="false" text="arr1">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="arr2RadioButton" layoutX="249.0" layoutY="596.0" mnemonicParsing="false" text="arr2">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="arr3RadioButton" layoutX="314.0" layoutY="596.0" mnemonicParsing="false" text="arr3">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </RadioButton>
+      <ComboBox fx:id="oddEvenComboBox" layoutX="189.0" layoutY="563.0" prefWidth="150.0" promptText="Select ODD/EVEN" />
+      <Line endX="-87.0" endY="12.5" layoutX="488.0" layoutY="652.0" startX="-87.0" startY="-138.0" strokeWidth="3.0">
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#133fd0" />
+                  <Stop color="#1bcd4d" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Line>
+      <TextArea fx:id="bottomresultTxtArea" editable="false" layoutX="411.0" layoutY="518.0" prefHeight="126.0" prefWidth="440.0" wrapText="true" />
+      <Button layoutX="37.0" layoutY="628.0" mnemonicParsing="false" onAction="#traverseAsPerTheSelectionAndShowResultButton" prefHeight="32.0" prefWidth="329.0" text="Traverse as per the Selection and show result" wrapText="true">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#1c8da1" />
+                  <Stop color="#bdab24" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+   </children>
+</AnchorPane>
